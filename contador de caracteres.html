@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de caracteres</title>
+
+<style>
+    textarea {
+        width: 200px;
+        height: 500px;
+        border: 4px solid black;
+        background-color: beige;
+    }
+
+    #contador {
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+</style>
+
+    
+<script>
+    function contarCaracteres() {
+        let textarea = document.getElementById("texto");
+        let contador = document.getElementById("contador");
+        let numCaracteres = textarea.value.length;
+        contador.textContent = "Contador de caracteres: " + numCaracteres;
+    }
+</script>
+
+</head>
+<body>
+    <textarea placeholder="Este es un contador de caracteres" id="texto" cols="30" rows="10" oninput="contarCaracteres()"></textarea>
+    <div id="contador"> Caracteres usados: 0 </div>
+
+
+
+</body>
+</html>

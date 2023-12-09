@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrados</title>
+    <style>
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+  .cuadrado {
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    display: inline-flex;
+    margin: 10px;
+
+    
+   }
+
+   #cuadrado1 {
+    background-color: blue;
+   }
+   #cuadrado2 {
+    background-color: red;
+   }
+   #cuadrado3 {
+    background-color: yellow;
+   }
+
+    </style>
+
+    <script>
+        function cambiarFondo(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+    </script>
+      
+
+
+</head>
+<body>
+    <div class="cuadrado" id="cuadrado1" onclick="cambiarFondo('purple')"> </div>
+    <div class="cuadrado" id="cuadrado2" onclick="cambiarFondo('orange')"> </div>
+    <div class="cuadrado" id="cuadrado3" onclick="cambiarFondo('brown')"> </div>
+</body>
+</html>
